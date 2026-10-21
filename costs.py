@@ -4,4 +4,4 @@
 def estimate_cost(hourly_rate, hours, instances):
     if min(hourly_rate, hours, instances) < 0:
         raise ValueError("Los valores no pueden ser negativos")
-    return hourly_rate * hours + instances
+    return hourly_rate * hours * instances
